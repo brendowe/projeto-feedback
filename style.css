@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --cor1: hsl(25, 97%, 53%);
+    --cor2: hsl(0, 0%, 100%);
+    --cor3: hsl(217, 12%, 63%);
+    --cor4: hsl(216, 12%, 54%);
+    --cor5: hsl(213, 19%, 18%);
+    --cor6: hsl(216, 12%, 8%);
+    --fonte1: 'Fraunces', serif;
+    --fonte2: 'Overpass', sans-serif;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor6);
+    font-family: var(--fonte2);
+}
+
+.btn:focus {
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+#container {
+    height: 420px;
+    width: 400px;
+    border-radius: 10%;
+    text-align: center;
+    background-color: hsl(217, 26%, 13%);
+}
+
+#star {
+    display: inline-block;
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--cor5);
+    background-image: url(images/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 275px;
+}
+
+h1 {
+    padding-top: 25px;
+    padding-right: 25px;
+    color: var(--cor2);
+}
+
+p {
+    padding-top: 10px;
+    padding-right: 25px;
+    color: var(--cor4);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+h1, p {
+    margin: auto;
+    width: 300px;
+    text-align: left;
+}
+
+#botao {
+    width: 300px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 30px;
+    width: 320px;
+    position: relative;
+    bottom: 12px;
+    border: none;
+}
+
+li button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor5);
+    color: var(--cor3);
+    border-radius: 25px;
+    border: none;
+    margin-top: 20px;
+}
+
+#list > ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-right: 40px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+li button:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+#botao:hover {
+    color: var(--cor1);
+    background-color: var(--cor2);
+}
+
+#container2 {
+    height: 420px;
+    width: 400px;
+    border-radius: 10%;
+    text-align: center;
+    background-color: hsl(217, 26%, 13%);
+    display: none;
+}
+
+#container2 > img{
+    margin-top: 50px;
+}
+
+#p1 {
+    margin-top: 20px;
+    color: var(--cor1);
+    background-color: var(--cor5);
+    width: 150px;
+    border-radius: 30px;
+    padding-left: 25px;
+    height: 26px;
+}
+
+#container2 > h1 {
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 25px;
+}
+
+#container2 > p {
+    text-align: center;
+    font-size: 14px;
+    padding-left: 25px;
+
+}
+
